@@ -9,7 +9,7 @@ body, html {
 }
 
 
-/*Header */
+/*** DEBUT HEADER ***/
 
 .background-nav {
     background: #100b11;
@@ -41,7 +41,7 @@ body, html {
 }
 
 .slideshow {
-    background-image: url('img/img5.jpg');
+    background-image: url('img/img1.jpg');
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -72,6 +72,7 @@ body, html {
 }
 
 .main-title {
+    color: white!important;
     font-size: 60px;
 }
 
@@ -94,11 +95,21 @@ ul li a {
     font-family: 'Montserrat', sans-serif;
 }
 
+a:focus {
+    color: white;
+}
+
 ul li a:hover {
     text-decoration: none;
     color: #fe5f00;
     transition: 0.5s;
 }
+
+
+/*** FIN HEADER ***/
+
+
+/*** DEBUT A PROPOS ***/
 
 .pic {
     float: left;
@@ -110,18 +121,34 @@ ul li a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 500px;
-    border: 2px solid #fe5f00;
     margin-right: 30px;
+    margin-top: 75px;
+    margin-left: 160px;
+}
+
+.about {
+    margin-top: 126px;
 }
 
 .description {
     float: left;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     font-family: 'Open Sans', sans-serif;
-    margin-top: 100px;
+    width: 782px;
+    padding: 0;
 }
+
+h3 {
+    color: #fb5e01!important;
+}
+
+
+/*** FIN A PROPOS ***/
+
+
+/*** DEBUT MES REALISATIONS ***/
 
 .block-title {
     padding-top: 50vh;
@@ -130,7 +157,6 @@ ul li a:hover {
 }
 
 .block-title h1, .block-title h3 {
-    color: white;
     text-shadow: 1px 1px 2px black;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -138,8 +164,8 @@ ul li a:hover {
 
 .cadre {
     height: auto;
+    color: white;
     border: 1px solid black;
-    background: #fe5f00;
     margin-right: 15px;
     padding: 0;
     border-radius: 40px 0px 0px 0px;
@@ -153,9 +179,9 @@ ul li a:hover {
 }
 
 h4 {
-    background: black;
-    color: white;
+    color: #fe5f00;
     padding: 5px;
+    font-size: 20px;
     margin-bottom: 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -174,6 +200,7 @@ h2 {
 }
 
 .block-text p {
+    text-align: justify;
     padding: 10px;
     font-weight: 500;
     color: white;
@@ -188,14 +215,26 @@ h2 {
     clear: both;
 }
 
+
+/*** FIN MES REALISATIONS ***/
+
+
+/*** DEBUT MAIN ***/
+
 main {
     background: rgba(228, 225, 225, 0.08);
 }
 
 .background-site {
-    background-image: url('img/uhuh2.jpg');
+    background-image: url('img/img2.jpg');
     background-attachment: fixed;
 }
+
+
+/*** FIN MAIN ***/
+
+
+/*** DEBUT EFFET CLAVIER ***/
 
 .cd-intro {
     width: 90%;
@@ -1531,22 +1570,27 @@ xpush
 }
 
 .color-change {
+    font-size: 30px!important;
     color: #fe5f00;
 }
 
 
-/* about*/
+/*** FIN EFFET CLAVIER ***/
+
+
+/*** ABOUT ***/
 
 .about {
     color: white;
-    text-shadow: 4px 2px 12px black;
-    background: #fe5f00;
     padding: 5px;
     padding-left: 0px;
 }
 
 
-/* charte*/
+/*** FIN ABOUT ***/
+
+
+/*** DEBUT MES COMPETENCES ***/
 
 .highcharts-background {
     fill: rgba(228, 225, 225, 0)!important;
@@ -1569,7 +1613,10 @@ footer {
 }
 
 
-/*FOOTER*/
+/*** FIN MES COMPETENCES ***/
+
+
+/*** DEBUT FOOTER ***/
 
 .border-title-footer {
     border-bottom: 1px solid #555555;
@@ -1592,20 +1639,24 @@ footer {
     padding-left: 10px;
 }
 
-
-}
-/* Footer*/
 .page-item {
     color: white;
 }
+
 .pad-footer {
     padding: 10px;
 }
+
 .footer-color {
     background: linear-gradient( #100b11, #131823, #100b11);
 }
 
-/* Bouton de scroll vers le haut*/
+
+/*** FIN FOOTER ***/
+
+
+/*** DEBUT BUTTON SCROLL ***/
+
 .scrollup {
     width: 40px;
     height: 40px;
@@ -1614,14 +1665,39 @@ footer {
     right: 50px;
     display: none;
     background-color: #0f0f12;
-    /* border: 1px solid #93d3c3; */
-
     font-size: 20px;
     text-align: center;
     line-height: 37px;
     border-radius: 3px;
     color: #fe5f00;
 }
+
 .scrollup:hover {
     color: #fe5f00;
+}
+
+
+/*** FIN BUTTON SCROLL ***/
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .cadre-block {
+        display: block;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+        padding-right: 40px;
+    }
+    .pic {
+        float: left;
+        width: 250px;
+        height: 300px;
+        text-align: center;
+        border-style: none;
+        vertical-align: top;
+        max-width: 100%;
+        height: auto;
+        border-radius: 500px;
+        margin-right: 30px;
+        margin-top: 75px;
+        margin-left: 40px;
+    }
 }
